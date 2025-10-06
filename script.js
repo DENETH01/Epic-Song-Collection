@@ -28,6 +28,19 @@ function loadSong(i) {
   title.textContent = s.title;
   artist.textContent = `Artist: ${s.artist}`;
   cover.src = s.cover;
+  // 🧩 Change favicon to match current song cover
+function updateFavicon(url) {
+  const favicon = document.getElementById("dynamic-favicon") || document.createElement("link");
+  favicon.id = "dynamic-favicon";
+  favicon.rel = "icon";
+  favicon.type = "image/png";
+  favicon.href = url;
+  document.head.appendChild(favicon);
+}
+
+// inside loadSong(i):
+cover.src = s.cover;
+updateFavicon(s.cover);
   audio.load();
 }
 
