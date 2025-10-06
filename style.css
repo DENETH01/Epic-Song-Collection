@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background:i #000000;
+  color: #00e5ff;
+  font-family: "Poppins", sans-serif;
+}
+
+#visualizer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 15px;
+  background: rgba(3, 3, 73, 0.485);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+/* Player Container */
+.player-container {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.cover-wrapper img {
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgb(0, 255, 136);
+}
+
+.info {
+  margin-top: 15px;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.controls button {
+  background: rgba(0, 30, 255, 0.067);
+  border: none;
+  color: rgb(0, 255, 251);
+  padding: 12px 20px;
+  border-radius: 10px;
+  margin: 0 8px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  transition: background 0.3s;
+}
+
+.controls button:hover {
+  background: rgb(0, 86, 245);
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .cover-wrapper img {
+    width: 180px;
+    height: 180px;
+  }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Epic Radio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="visualizer"></canvas>
+
+  <header class="header">
+    <h1>Epic  Song Collection</h1>
+    <p>Made by DENETH</p>
+  </header>
+
+  <main class="player-container">
+    <div class="cover-wrapper">
+      <img id="cover" src="covers/btth.jpg" alt="cover art" />
+    </div>
+
+    <div class="info">
+      <h2 id="song-title">Loading...</h2>
+      <p id="artist">Artist: Unknown</p>
+      <p id="time">0:00 / 0:00</p>
+    </div>
+
+    <div class="controls">
+      <button id="prev">⏮</button>
+      <button id="play">🔊</button>
+      <button id="next">⏭</button>
+    </div>
+
+    <audio id="audio" crossorigin="anonymous"></audio>
+  </main>
+
+  <footer>
+    <p>All songs belong to their respective owners.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
